@@ -1,1 +1,25 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
 
+:root {
+  --orange-color: #ff6c00;
+  --white-color: #ffffff;
+
+  --accent-color: var(--orange-color);
+  --bg-primery: var(--white-color);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
