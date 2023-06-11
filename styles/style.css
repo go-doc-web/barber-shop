@@ -41,12 +41,45 @@ body {
   letter-spacing: 0.02em;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: currentColor;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  /* width: 100%;
+  max-width: 1200px; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 1px solid tomato;
 }
 
 .social-link {
@@ -109,10 +142,17 @@ button {
   clip-path: inset(50%);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* Header */
 
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link,
@@ -144,15 +184,21 @@ button {
   background-color: #222;
 }
 
+.hero-content {
+  padding: 272px 100px 208px;
+}
+
 .hero-link {
   color: var(--heading-color);
 }
 
 .hero-suptitle {
   color: var(--secondary-text-color);
+  margin-bottom: 20px;
 }
 
 .hero-title {
+  margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   font-size: 7.2rem;
   line-height: calc(8.5 / 7.2);
@@ -162,6 +208,7 @@ button {
 }
 
 .hero-text {
+  max-width: 358px;
   font-size: 1.8rem;
   line-height: calc(3 / 1.8);
   letter-spacing: 0.02em;
@@ -171,15 +218,22 @@ button {
 
 /* -------------ABOUT----------------*/
 
+.about {
+  background-color: yellowgreen;
+}
+
 .about-suptitle {
   color: var(--heading-color);
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--heading-color);
+  margin-bottom: 20px;
 }
 .about-after-title {
   line-height: calc(3 / 1.8);
   color: #555555;
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 1.4rem;
@@ -187,6 +241,7 @@ button {
   /* or 186% */
 
   color: var(--primery-text-color);
+  margin-bottom: 42px;
 }
 .about-btn {
   color: var(--heading-color);
@@ -199,10 +254,17 @@ button {
 }
 
 .services-suptitle {
+  margin-bottom: 20px;
   color: var(--secondary-text-color);
 }
 .services-title {
+  margin-bottom: 44px;
   color: var(--heading-color-secondary);
+}
+
+.services-list {
+  border: 1px solid #fff;
+  padding: 30px 20px;
 }
 
 .service-item-text {
@@ -213,10 +275,20 @@ button {
   color: var(--secondary-text-color);
 }
 .services-btn {
+  display: block;
   color: var(--first-btn-color);
+
+  margin: 44px auto 0;
 }
 
 /* Advantages */
+
+.advantages-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  border: 1px solid black;
+}
 .advantages-item span {
   position: relative;
   font-weight: 700;
@@ -246,10 +318,12 @@ button {
   color: var(--heading-color);
 }
 .advantages-suptitle {
+  margin-bottom: 20px;
   color: var(--heading-color);
 }
 
 .advantages-title {
+  margin-bottom: 20px;
   color: var(--heading-color);
 }
 
