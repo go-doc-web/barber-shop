@@ -57,6 +57,10 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 address {
   font-style: normal;
 }
@@ -101,6 +105,12 @@ button {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  min-width: 16rem;
+  height: 4rem;
+
+  border-radius: 25px;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .button:hover,
@@ -155,6 +165,29 @@ button {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  margin-left: 131px;
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.header-tel {
+  margin-right: 40px;
+}
+
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -181,11 +214,21 @@ button {
 /* HERO */
 
 .hero {
-  background-color: #222;
+  background-color: #fff;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 10rem;
 }
 
 .hero-content {
+  flex-grow: 1;
   padding: 272px 100px 208px;
+  background-color: #222;
 }
 
 .hero-link {
@@ -222,6 +265,23 @@ button {
   background-color: yellowgreen;
 }
 
+.about .container {
+  display: flex;
+  gap: 3rem;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.about-content {
+  width: 470px;
+}
+
 .about-suptitle {
   color: var(--heading-color);
   margin-bottom: 20px;
@@ -253,6 +313,15 @@ button {
   background-color: black;
 }
 
+.wrap-list {
+  display: flex;
+}
+
+.services-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-suptitle {
   margin-bottom: 20px;
   color: var(--secondary-text-color);
@@ -263,6 +332,7 @@ button {
 }
 
 .services-list {
+  width: 50%;
   border: 1px solid #fff;
   padding: 30px 20px;
 }
@@ -273,6 +343,10 @@ button {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .services-btn {
   display: block;
@@ -334,11 +408,33 @@ button {
 
 /* Barbers */
 
+.barbers {
+  padding: 120px 0;
+}
+
 .barbers-suptitle {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-family: 'Open Sans';
+
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
   color: var(--heading-color);
 }
 
+.barbers-list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.barbers-list-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .barbers-title {
+  margin-bottom: 44px;
   color: var(--heading-color);
 }
 
@@ -356,10 +452,33 @@ button {
   color: var(--accent-color);
 }
 
+.list-social {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Portfolio */
 
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-suptitle {
+  margin-bottom: 44px;
   color: var(--heading-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  /* gap:30px; */
+}
+
+.portfolio-list li {
+  /* width: calc((100% - 90px) / 4); */
+  width: calc((100% / 4 - 30px));
+  margin: 15px;
 }
 
 /* Online-booking */
